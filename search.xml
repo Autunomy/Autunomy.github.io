@@ -1,38 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/01/23/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<p><img src="/../images/image.png" alt="aaa"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>使用hexo+github搭建个人博客</title>
     <url>/2025/01/23/%E4%BD%BF%E7%94%A8hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
-<h1 id="MacOS系统"><a href="#MacOS系统" class="headerlink" title="MacOS系统"></a>MacOS系统</h1><p>安装hexo</p>
+    <content><![CDATA[<h1 id="MacOS系统"><a href="#MacOS系统" class="headerlink" title="MacOS系统"></a>MacOS系统</h1><p>安装hexo</p>
 <ul>
-<li><h1 id="安装homebrew"><a href="#安装homebrew" class="headerlink" title="安装homebrew"></a>安装homebrew</h1></li>
+<li>安装homebrew <code>/usr/bin/ruby -e &quot;$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install)&quot;</code></li>
 <li>安装node<code>brew install node</code> </li>
-<li>npm install npm -g # 更新npm</li>
-<li>npm install -g hexo-cli # 本地安装hexo</li>
-<li>hexo init blog # 初始化hexo，blog是在本地创建的目录名称</li>
-<li>cd blog # 进入目录</li>
-<li>npm install  # 安装依赖</li>
-<li>hexo server # 启动hexo服务</li>
+<li>更新npm<code>npm install npm -g</code></li>
+<li>本地安装hexo<code>npm install -g hexo-cli</code></li>
+<li>初始化hexo，blog是在本地创建的目录名称<code>hexo init blog</code></li>
+<li>进入目录<code>cd blog</code></li>
+<li>安装依赖<code>npm install</code></li>
+<li>启动hexo服务<code>hexo server</code></li>
 <li><a href="http://localhost:4000/">http://localhost:4000/</a> 访问网址即可在本地访问hexo</li>
 </ul>
 <p>新增内容</p>
@@ -59,7 +39,8 @@
 <li><a href="https://theme-next.iissnan.com/getting-started.html">https://theme-next.iissnan.com/getting-started.html</a></li>
 <li><a href="https://blog.csdn.net/as480133937/article/details/100138838">https://blog.csdn.net/as480133937/article/details/100138838</a></li>
 <li><a href="https://theme-next.iissnan.com/theme-settings.html">https://theme-next.iissnan.com/theme-settings.html</a></li>
+<li><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></li>
 </ul>
-]]></content>
+<h1 id="Windows系统"><a href="#Windows系统" class="headerlink" title="Windows系统"></a>Windows系统</h1>]]></content>
   </entry>
 </search>
