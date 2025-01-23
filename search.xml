@@ -3,64 +3,19 @@
   <entry>
     <title>Sublime Text基本操作</title>
     <url>/2025/01/23/Sublime%20Text%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<h3 id="自动换行"><a href="#自动换行" class="headerlink" title="自动换行"></a>自动换行</h3><p>view -&gt; word wrap</p>
-<h3 id="找出重复值"><a href="#找出重复值" class="headerlink" title="找出重复值"></a>找出重复值</h3><p>注意：原理是先排序，然后查找相邻两行内容是否相同</p>
+    <content><![CDATA[<h2 id="自动换行"><a href="#自动换行" class="headerlink" title="自动换行"></a>自动换行</h2><p>view -&gt; word wrap</p>
+<h2 id="找出重复值"><a href="#找出重复值" class="headerlink" title="找出重复值"></a>找出重复值</h2><p>注意：原理是先排序，然后查找相邻两行内容是否相同</p>
 <ol>
-<li><font style="color:rgb(77, 77, 77);">Edit &gt; Sort Lines</font></li>
-<li><font style="color:rgb(77, 77, 77);">ctrl + F</font></li>
-<li><font style="color:rgb(77, 77, 77);">查找字符串</font><code>&lt;font style=&quot;color:rgb(199, 37, 78);background-color:rgb(249, 242, 244);&quot;&gt;^(.+)$[\r\n](^\1$[\r\n]&#123;0, 1&#125;)+&lt;/font&gt;</code></li>
+<li>Edit &gt; Sort Lines</li>
+<li>ctrl + F</li>
+<li>查找字符串 <code>^(.+)$[\r\n](^\1$[\r\n]&#123;0, 1&#125;)+</code></li>
 </ol>
-<h3 id="去除重复值"><a href="#去除重复值" class="headerlink" title="去除重复值"></a>去除重复值</h3><p>cmd + shift + F,然后点击替换</p>
+<h2 id="去除重复值"><a href="#去除重复值" class="headerlink" title="去除重复值"></a>去除重复值</h2><p>cmd + shift + F,然后点击替换</p>
 <h2 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h2><p>ctrl + alt + F ,如果发现无法替换为一个转义字符，例如\n换行，那么就需要将左侧第一排第一个按钮 <code>.*</code> 开启即可</p>
 <h2 id="批量操作"><a href="#批量操作" class="headerlink" title="批量操作"></a>批量操作</h2><ol>
 <li>先全选然后command + shift + L(ctrl + shift + L) 即可选中每一行的行尾</li>
 <li>选中某些内容，然后command + control + G(windows待研究)  即可选中文档中所有和选中内容相同的部分</li>
 </ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>mac操作指南</title>
-    <url>/2025/01/23/mac%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<h1 id="快捷键部分"><a href="#快捷键部分" class="headerlink" title="快捷键部分"></a>快捷键部分</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">control A 快速跳转到行首</span><br><span class="line">control E 快速跳转到行尾</span><br><span class="line">fn F 全屏/取消全屏</span><br><span class="line">control command q 锁屏</span><br><span class="line">fn + f11 快速回到桌面</span><br><span class="line">command + shift + . 查看隐藏文件</span><br><span class="line">control + D 删除后一个字符</span><br><span class="line">command + t 快速打开一个新的标签页</span><br><span class="line"></span><br><span class="line">双指按触控板是右键</span><br><span class="line">三指上划切换桌面</span><br></pre></td></tr></table></figure>
-
-<h1 id="安装homebrew"><a href="#安装homebrew" class="headerlink" title="安装homebrew"></a>安装homebrew</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install)&quot;</span><br></pre></td></tr></table></figure>
-
-<p>homebrew就是类似于linux的yum包管理器</p>
-<h1 id="安装redis"><a href="#安装redis" class="headerlink" title="安装redis"></a>安装redis</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install redis</span><br><span class="line">brew services start redis # 启动redis</span><br><span class="line">redis-cli # 打开redis命令行</span><br><span class="line">brew services stop redis#结束redis</span><br></pre></td></tr></table></figure>
-
-<h1 id="与windows的按键对照表"><a href="#与windows的按键对照表" class="headerlink" title="与windows的按键对照表"></a>与windows的按键对照表</h1><p>command -&gt; ctrl</p>
-<p>option -&gt; alt</p>
-<p>control苹果独有，方便苹果操作</p>
-<h1 id="全屏"><a href="#全屏" class="headerlink" title="全屏"></a>全屏</h1><p>点击左上角的全屏按钮其实就是新建了一个桌面，然后新的桌面不现实任务栏</p>
-<p>使用三指上滑即可查看</p>
-<h1 id="数据库管理工具推荐"><a href="#数据库管理工具推荐" class="headerlink" title="数据库管理工具推荐"></a>数据库管理工具推荐</h1><p>navicat</p>
-<p>dbeaver</p>
-<p>datagrip</p>
-<h1 id="redis客户端"><a href="#redis客户端" class="headerlink" title="redis客户端"></a>redis客户端</h1><p>another redis desktop manager，可以使用homebrew安装</p>
-<h1 id="navicat安装"><a href="#navicat安装" class="headerlink" title="navicat安装"></a>navicat安装</h1><p><a href="https://segmentfault.com/a/1190000040954887">https://segmentfault.com/a/1190000040954887</a></p>
-<p>2023-07-24测试可用</p>
-<h1 id="鼠标滚轮方向相反"><a href="#鼠标滚轮方向相反" class="headerlink" title="鼠标滚轮方向相反"></a>鼠标滚轮方向相反</h1><p><a href="https://mos.caldis.me/#">https://mos.caldis.me/#</a></p>
-<p>下载这个mos软件，里面默认就会修改滚轮方向而不会修改触控板方向</p>
-<p><img src="/../images/image1.png" alt="image1"></p>
-<h1 id="安装zookeeper"><a href="#安装zookeeper" class="headerlink" title="安装zookeeper"></a>安装zookeeper</h1><p>使用homebrew安装</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install zookeeper //安装zk</span><br><span class="line">cd /usr/local/etc/zookeeper //进入zk的配置目录</span><br><span class="line">cat zoo.cfg // 查看zk的配置文件</span><br><span class="line">zkServer start //启动zk</span><br><span class="line">zkCli //连接zk</span><br><span class="line">quit //退出客户端</span><br><span class="line">zkServer status //查看zk状态</span><br><span class="line">zkServer stop //关闭zk</span><br></pre></td></tr></table></figure>
-
-<h1 id="解压rar文件"><a href="#解压rar文件" class="headerlink" title="解压rar文件"></a>解压rar文件</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install unrar</span><br><span class="line">unrar x 需解压的文件目录</span><br></pre></td></tr></table></figure>
-
-<h1 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install --cask --appdir=/Applications docker</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装完成之后就会在应用程序部分显示docker的图标 点开即可</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="使用docker安装mysql"><a href="#使用docker安装mysql" class="headerlink" title="使用docker安装mysql"></a>使用docker安装mysql</h1><p>因为传统的homebrew和dmg方式安装mysql总会出现问题，所以使用docker来安装</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker pull mysql</span><br><span class="line">docker run -d -p 3306:3306 --name mymysql -e MYSQL_ROOT_PASSWORD=你的密码 docker.io/mysql:latest</span><br><span class="line">进入容器命令：docker exec -it c96f3324e800 /bin/sh</span><br><span class="line">输入刚刚设置好的密码：mysql -uroot -proot</span><br><span class="line">alter user &#x27;root&#x27;@&#x27;%&#x27; identified with mysql_native_password by &#x27;你的密码&#x27;;</span><br><span class="line">查看mysql版本：select version();</span><br></pre></td></tr></table></figure>
-
-<h1 id="更高级的命令行"><a href="#更高级的命令行" class="headerlink" title="更高级的命令行"></a>更高级的命令行</h1><p><a href="https://zhuanlan.zhihu.com/p/290737828">iTerm2 + oh-my-zsh 教程（7000字长文）</a></p>
-<h1 id="vmware-fusion13"><a href="#vmware-fusion13" class="headerlink" title="vmware fusion13"></a>vmware fusion13</h1><p>密钥1：4C21U-2KK9Q-M8130-4V2QH-CF810（亲测第一个是可用的）<br>密钥2：ZF3R0-FHED2-M80TY-8QYGC-NPKYF<br>密钥3：YF390-0HF8P-M81RQ-2DXQE-M2UT6<br>密钥4：ZF71R-DMX85-08DQY-8YMNC-PPHV8</p>
-<p>可用的centos镜像：<a href="https://biosyxh.cn:5001/sharing/pAlcCGNJf">https://biosyxh.cn:5001/sharing/pAlcCGNJf</a></p>
-<p><a href="https://www.jianshu.com/p/e706608b91f5">苹果 M1 芯片安装虚拟机 CentOS 7 与设置静态 IP</a></p>
-<h1 id="clean-my-mac-X"><a href="#clean-my-mac-X" class="headerlink" title="clean my mac X"></a>clean my mac X</h1><p>电脑清理软件</p>
-<h1 id="idea破解-2024-03-02"><a href="#idea破解-2024-03-02" class="headerlink" title="idea破解-2024-03-02"></a>idea破解-2024-03-02</h1><h1 id="流程图，时序图画图工具"><a href="#流程图，时序图画图工具" class="headerlink" title="流程图，时序图画图工具"></a>流程图，时序图画图工具</h1><p>visual paradigm community edition：<a href="https://www.visual-paradigm.com/cn/download/">https://www.visual-paradigm.com/cn/download/</a></p>
-<h1 id="历史剪贴板"><a href="#历史剪贴板" class="headerlink" title="历史剪贴板"></a>历史剪贴板</h1><p><a href="https://www.raycast.com/pricing">https://www.raycast.com/pricing</a></p>
-<p>目前在使用的破解版：<a href="https://www.yuque.com/attachments/yuque/0/2024/zip/26956839/1727001112821-965cd00e-73f6-46e1-9dd5-80611b427864.zip">新建 360压缩 ZIP 文件.zip</a></p>
-<h1 id="修改菜单栏图标间距"><a href="#修改菜单栏图标间距" class="headerlink" title="修改菜单栏图标间距"></a>修改菜单栏图标间距</h1><p><a href="https://sindresorhus.com/menu-bar-spacing">https://sindresorhus.com/menu-bar-spacing</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -108,5 +63,50 @@
 <li><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></li>
 </ul>
 <h1 id="Windows系统"><a href="#Windows系统" class="headerlink" title="Windows系统"></a>Windows系统</h1>]]></content>
+  </entry>
+  <entry>
+    <title>mac操作指南</title>
+    <url>/2025/01/23/mac%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<h1 id="快捷键部分"><a href="#快捷键部分" class="headerlink" title="快捷键部分"></a>快捷键部分</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">control A 快速跳转到行首</span><br><span class="line">control E 快速跳转到行尾</span><br><span class="line">fn F 全屏/取消全屏</span><br><span class="line">control command q 锁屏</span><br><span class="line">fn + f11 快速回到桌面</span><br><span class="line">command + shift + . 查看隐藏文件</span><br><span class="line">control + D 删除后一个字符</span><br><span class="line">command + t 快速打开一个新的标签页</span><br><span class="line"></span><br><span class="line">双指按触控板是右键</span><br><span class="line">三指上划切换桌面</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装homebrew"><a href="#安装homebrew" class="headerlink" title="安装homebrew"></a>安装homebrew</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install)&quot;</span><br></pre></td></tr></table></figure>
+
+<p>homebrew就是类似于linux的yum包管理器</p>
+<h1 id="安装redis"><a href="#安装redis" class="headerlink" title="安装redis"></a>安装redis</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install redis</span><br><span class="line">brew services start redis # 启动redis</span><br><span class="line">redis-cli # 打开redis命令行</span><br><span class="line">brew services stop redis#结束redis</span><br></pre></td></tr></table></figure>
+
+<h1 id="与windows的按键对照表"><a href="#与windows的按键对照表" class="headerlink" title="与windows的按键对照表"></a>与windows的按键对照表</h1><p>command -&gt; ctrl</p>
+<p>option -&gt; alt</p>
+<p>control苹果独有，方便苹果操作</p>
+<h1 id="全屏"><a href="#全屏" class="headerlink" title="全屏"></a>全屏</h1><p>点击左上角的全屏按钮其实就是新建了一个桌面，然后新的桌面不现实任务栏</p>
+<p>使用三指上滑即可查看</p>
+<h1 id="数据库管理工具推荐"><a href="#数据库管理工具推荐" class="headerlink" title="数据库管理工具推荐"></a>数据库管理工具推荐</h1><p>navicat</p>
+<p>dbeaver</p>
+<p>datagrip</p>
+<h1 id="redis客户端"><a href="#redis客户端" class="headerlink" title="redis客户端"></a>redis客户端</h1><p>another redis desktop manager，可以使用homebrew安装</p>
+<h1 id="navicat安装"><a href="#navicat安装" class="headerlink" title="navicat安装"></a>navicat安装</h1><p><a href="https://segmentfault.com/a/1190000040954887">https://segmentfault.com/a/1190000040954887</a></p>
+<p>2023-07-24测试可用</p>
+<h1 id="鼠标滚轮方向相反"><a href="#鼠标滚轮方向相反" class="headerlink" title="鼠标滚轮方向相反"></a>鼠标滚轮方向相反</h1><p><a href="https://mos.caldis.me/#">https://mos.caldis.me/#</a></p>
+<p>下载这个mos软件，里面默认就会修改滚轮方向而不会修改触控板方向</p>
+<p><img src="/../images/image1.png" alt="image1"></p>
+<h1 id="安装zookeeper"><a href="#安装zookeeper" class="headerlink" title="安装zookeeper"></a>安装zookeeper</h1><p>使用homebrew安装</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install zookeeper //安装zk</span><br><span class="line">cd /usr/local/etc/zookeeper //进入zk的配置目录</span><br><span class="line">cat zoo.cfg // 查看zk的配置文件</span><br><span class="line">zkServer start //启动zk</span><br><span class="line">zkCli //连接zk</span><br><span class="line">quit //退出客户端</span><br><span class="line">zkServer status //查看zk状态</span><br><span class="line">zkServer stop //关闭zk</span><br></pre></td></tr></table></figure>
+
+<h1 id="解压rar文件"><a href="#解压rar文件" class="headerlink" title="解压rar文件"></a>解压rar文件</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install unrar</span><br><span class="line">unrar x 需解压的文件目录</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install --cask --appdir=/Applications docker</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装完成之后就会在应用程序部分显示docker的图标 点开即可</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="使用docker安装mysql"><a href="#使用docker安装mysql" class="headerlink" title="使用docker安装mysql"></a>使用docker安装mysql</h1><p>因为传统的homebrew和dmg方式安装mysql总会出现问题，所以使用docker来安装</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker pull mysql</span><br><span class="line">docker run -d -p 3306:3306 --name mymysql -e MYSQL_ROOT_PASSWORD=你的密码 docker.io/mysql:latest</span><br><span class="line">进入容器命令：docker exec -it c96f3324e800 /bin/sh</span><br><span class="line">输入刚刚设置好的密码：mysql -uroot -proot</span><br><span class="line">alter user &#x27;root&#x27;@&#x27;%&#x27; identified with mysql_native_password by &#x27;你的密码&#x27;;</span><br><span class="line">查看mysql版本：select version();</span><br></pre></td></tr></table></figure>
+
+<h1 id="更高级的命令行"><a href="#更高级的命令行" class="headerlink" title="更高级的命令行"></a>更高级的命令行</h1><p><a href="https://zhuanlan.zhihu.com/p/290737828">iTerm2 + oh-my-zsh 教程（7000字长文）</a></p>
+<h1 id="vmware-fusion13"><a href="#vmware-fusion13" class="headerlink" title="vmware fusion13"></a>vmware fusion13</h1><p>密钥1：4C21U-2KK9Q-M8130-4V2QH-CF810（亲测第一个是可用的）<br>密钥2：ZF3R0-FHED2-M80TY-8QYGC-NPKYF<br>密钥3：YF390-0HF8P-M81RQ-2DXQE-M2UT6<br>密钥4：ZF71R-DMX85-08DQY-8YMNC-PPHV8</p>
+<p>可用的centos镜像：<a href="https://biosyxh.cn:5001/sharing/pAlcCGNJf">https://biosyxh.cn:5001/sharing/pAlcCGNJf</a></p>
+<p><a href="https://www.jianshu.com/p/e706608b91f5">苹果 M1 芯片安装虚拟机 CentOS 7 与设置静态 IP</a></p>
+<h1 id="clean-my-mac-X"><a href="#clean-my-mac-X" class="headerlink" title="clean my mac X"></a>clean my mac X</h1><p>电脑清理软件</p>
+<h1 id="idea破解-2024-03-02"><a href="#idea破解-2024-03-02" class="headerlink" title="idea破解-2024-03-02"></a>idea破解-2024-03-02</h1><h1 id="流程图，时序图画图工具"><a href="#流程图，时序图画图工具" class="headerlink" title="流程图，时序图画图工具"></a>流程图，时序图画图工具</h1><p>visual paradigm community edition：<a href="https://www.visual-paradigm.com/cn/download/">https://www.visual-paradigm.com/cn/download/</a></p>
+<h1 id="历史剪贴板"><a href="#历史剪贴板" class="headerlink" title="历史剪贴板"></a>历史剪贴板</h1><p><a href="https://www.raycast.com/pricing">https://www.raycast.com/pricing</a></p>
+<p>目前在使用的破解版：<a href="https://www.yuque.com/attachments/yuque/0/2024/zip/26956839/1727001112821-965cd00e-73f6-46e1-9dd5-80611b427864.zip">新建 360压缩 ZIP 文件.zip</a></p>
+<h1 id="修改菜单栏图标间距"><a href="#修改菜单栏图标间距" class="headerlink" title="修改菜单栏图标间距"></a>修改菜单栏图标间距</h1><p><a href="https://sindresorhus.com/menu-bar-spacing">https://sindresorhus.com/menu-bar-spacing</a></p>
+]]></content>
   </entry>
 </search>
