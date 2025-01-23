@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Sublime Text基本操作</title>
+    <url>/2025/01/23/Sublime%20Text%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<h3 id="自动换行"><a href="#自动换行" class="headerlink" title="自动换行"></a>自动换行</h3><p>view -&gt; word wrap</p>
+<h3 id="找出重复值"><a href="#找出重复值" class="headerlink" title="找出重复值"></a>找出重复值</h3><p>注意：原理是先排序，然后查找相邻两行内容是否相同</p>
+<ol>
+<li><font style="color:rgb(77, 77, 77);">Edit &gt; Sort Lines</font></li>
+<li><font style="color:rgb(77, 77, 77);">ctrl + F</font></li>
+<li><font style="color:rgb(77, 77, 77);">查找字符串</font><code>&lt;font style=&quot;color:rgb(199, 37, 78);background-color:rgb(249, 242, 244);&quot;&gt;^(.+)$[\r\n](^\1$[\r\n]&#123;0, 1&#125;)+&lt;/font&gt;</code></li>
+</ol>
+<h3 id="去除重复值"><a href="#去除重复值" class="headerlink" title="去除重复值"></a>去除重复值</h3><p>cmd + shift + F,然后点击替换</p>
+<h2 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h2><p>ctrl + alt + F ,如果发现无法替换为一个转义字符，例如\n换行，那么就需要将左侧第一排第一个按钮 <code>.*</code> 开启即可</p>
+<h2 id="批量操作"><a href="#批量操作" class="headerlink" title="批量操作"></a>批量操作</h2><ol>
+<li>先全选然后command + shift + L(ctrl + shift + L) 即可选中每一行的行尾</li>
+<li>选中某些内容，然后command + control + G(windows待研究)  即可选中文档中所有和选中内容相同的部分</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title>mac操作指南</title>
     <url>/2025/01/23/mac%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<h1 id="快捷键部分"><a href="#快捷键部分" class="headerlink" title="快捷键部分"></a>快捷键部分</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">control A 快速跳转到行首</span><br><span class="line">control E 快速跳转到行尾</span><br><span class="line">fn F 全屏/取消全屏</span><br><span class="line">control command q 锁屏</span><br><span class="line">fn + f11 快速回到桌面</span><br><span class="line">command + shift + . 查看隐藏文件</span><br><span class="line">control + D 删除后一个字符</span><br><span class="line">command + t 快速打开一个新的标签页</span><br><span class="line"></span><br><span class="line">双指按触控板是右键</span><br><span class="line">三指上划切换桌面</span><br></pre></td></tr></table></figure>
@@ -23,7 +41,7 @@
 <p>2023-07-24测试可用</p>
 <h1 id="鼠标滚轮方向相反"><a href="#鼠标滚轮方向相反" class="headerlink" title="鼠标滚轮方向相反"></a>鼠标滚轮方向相反</h1><p><a href="https://mos.caldis.me/#">https://mos.caldis.me/#</a></p>
 <p>下载这个mos软件，里面默认就会修改滚轮方向而不会修改触控板方向</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2023/png/26956839/1690250489469-ca4ee0fb-6409-4fb9-8eae-5b29af753cb9.png"></p>
+<p><img src="/../images/image1.png" alt="image1"></p>
 <h1 id="安装zookeeper"><a href="#安装zookeeper" class="headerlink" title="安装zookeeper"></a>安装zookeeper</h1><p>使用homebrew安装</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install zookeeper //安装zk</span><br><span class="line">cd /usr/local/etc/zookeeper //进入zk的配置目录</span><br><span class="line">cat zoo.cfg // 查看zk的配置文件</span><br><span class="line">zkServer start //启动zk</span><br><span class="line">zkCli //连接zk</span><br><span class="line">quit //退出客户端</span><br><span class="line">zkServer status //查看zk状态</span><br><span class="line">zkServer stop //关闭zk</span><br></pre></td></tr></table></figure>
 
@@ -50,7 +68,10 @@
     <url>/2025/01/23/%E4%BD%BF%E7%94%A8hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h1 id="MacOS系统"><a href="#MacOS系统" class="headerlink" title="MacOS系统"></a>MacOS系统</h1><p>安装hexo</p>
 <ul>
-<li>安装homebrew <code>/usr/bin/ruby -e &quot;$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install)&quot;</code></li>
+<li>安装homebrew</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install)&quot;</span><br></pre></td></tr></table></figure>
+<ul>
 <li>安装node<code>brew install node</code> </li>
 <li>更新npm<code>npm install npm -g</code></li>
 <li>本地安装hexo<code>npm install -g hexo-cli</code></li>

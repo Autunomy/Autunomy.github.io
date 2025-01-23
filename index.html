@@ -183,6 +183,77 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn,en,default">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/23/Sublime%20Text%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="hty">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/01/23/Sublime%20Text%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="post-title-link" itemprop="url">Sublime Text基本操作</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-01-23 19:47:08 / Modified: 19:49:37" itemprop="dateCreated datePublished" datetime="2025-01-23T19:47:08+08:00">2025-01-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="自动换行"><a href="#自动换行" class="headerlink" title="自动换行"></a>自动换行</h3><p>view -&gt; word wrap</p>
+<h3 id="找出重复值"><a href="#找出重复值" class="headerlink" title="找出重复值"></a>找出重复值</h3><p>注意：原理是先排序，然后查找相邻两行内容是否相同</p>
+<ol>
+<li><font style="color:rgb(77, 77, 77);">Edit &gt; Sort Lines</font></li>
+<li><font style="color:rgb(77, 77, 77);">ctrl + F</font></li>
+<li><font style="color:rgb(77, 77, 77);">查找字符串</font><code>&lt;font style=&quot;color:rgb(199, 37, 78);background-color:rgb(249, 242, 244);&quot;&gt;^(.+)$[\r\n](^\1$[\r\n]&#123;0, 1&#125;)+&lt;/font&gt;</code></li>
+</ol>
+<h3 id="去除重复值"><a href="#去除重复值" class="headerlink" title="去除重复值"></a>去除重复值</h3><p>cmd + shift + F,然后点击替换</p>
+<h2 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h2><p>ctrl + alt + F ,如果发现无法替换为一个转义字符，例如\n换行，那么就需要将左侧第一排第一个按钮 <code>.*</code> 开启即可</p>
+<h2 id="批量操作"><a href="#批量操作" class="headerlink" title="批量操作"></a>批量操作</h2><ol>
+<li>先全选然后command + shift + L(ctrl + shift + L) 即可选中每一行的行尾</li>
+<li>选中某些内容，然后command + control + G(windows待研究)  即可选中文档中所有和选中内容相同的部分</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn,en,default">
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/23/mac%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -208,7 +279,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2025-01-23 19:42:37 / Modified: 19:42:45" itemprop="dateCreated datePublished" datetime="2025-01-23T19:42:37+08:00">2025-01-23</time>
+              <time title="Created: 2025-01-23 19:42:37 / Modified: 19:51:32" itemprop="dateCreated datePublished" datetime="2025-01-23T19:42:37+08:00">2025-01-23</time>
             </span>
 
           
@@ -242,7 +313,7 @@
 <p>2023-07-24测试可用</p>
 <h1 id="鼠标滚轮方向相反"><a href="#鼠标滚轮方向相反" class="headerlink" title="鼠标滚轮方向相反"></a>鼠标滚轮方向相反</h1><p><a target="_blank" rel="noopener" href="https://mos.caldis.me/#">https://mos.caldis.me/#</a></p>
 <p>下载这个mos软件，里面默认就会修改滚轮方向而不会修改触控板方向</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2023/png/26956839/1690250489469-ca4ee0fb-6409-4fb9-8eae-5b29af753cb9.png"></p>
+<p><img src="/../images/image1.png" alt="image1"></p>
 <h1 id="安装zookeeper"><a href="#安装zookeeper" class="headerlink" title="安装zookeeper"></a>安装zookeeper</h1><p>使用homebrew安装</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">brew install zookeeper //安装zk</span><br><span class="line">cd /usr/local/etc/zookeeper //进入zk的配置目录</span><br><span class="line">cat zoo.cfg // 查看zk的配置文件</span><br><span class="line">zkServer start //启动zk</span><br><span class="line">zkCli //连接zk</span><br><span class="line">quit //退出客户端</span><br><span class="line">zkServer status //查看zk状态</span><br><span class="line">zkServer stop //关闭zk</span><br></pre></td></tr></table></figure>
 
@@ -306,7 +377,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2025-01-23 19:40:55 / Modified: 19:41:37" itemprop="dateCreated datePublished" datetime="2025-01-23T19:40:55+08:00">2025-01-23</time>
+              <time title="Created: 2025-01-23 19:40:55 / Modified: 19:45:21" itemprop="dateCreated datePublished" datetime="2025-01-23T19:40:55+08:00">2025-01-23</time>
             </span>
 
           
@@ -322,7 +393,10 @@
       
           <h1 id="MacOS系统"><a href="#MacOS系统" class="headerlink" title="MacOS系统"></a>MacOS系统</h1><p>安装hexo</p>
 <ul>
-<li>安装homebrew <code>/usr/bin/ruby -e &quot;$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install)&quot;</code></li>
+<li>安装homebrew</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install)&quot;</span><br></pre></td></tr></table></figure>
+<ul>
 <li>安装node<code>brew install node</code> </li>
 <li>更新npm<code>npm install npm -g</code></li>
 <li>本地安装hexo<code>npm install -g hexo-cli</code></li>
@@ -439,7 +513,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
