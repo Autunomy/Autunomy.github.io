@@ -19,4 +19,47 @@
 <p><img src="/../images/image.png" alt="aaa"></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>使用hexo+github搭建个人博客</title>
+    <url>/2025/01/23/%E4%BD%BF%E7%94%A8hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<h1 id="MacOS系统"><a href="#MacOS系统" class="headerlink" title="MacOS系统"></a>MacOS系统</h1><p>安装hexo</p>
+<ul>
+<li><h1 id="安装homebrew"><a href="#安装homebrew" class="headerlink" title="安装homebrew"></a>安装homebrew</h1></li>
+<li>安装node<code>brew install node</code> </li>
+<li>npm install npm -g # 更新npm</li>
+<li>npm install -g hexo-cli # 本地安装hexo</li>
+<li>hexo init blog # 初始化hexo，blog是在本地创建的目录名称</li>
+<li>cd blog # 进入目录</li>
+<li>npm install  # 安装依赖</li>
+<li>hexo server # 启动hexo服务</li>
+<li><a href="http://localhost:4000/">http://localhost:4000/</a> 访问网址即可在本地访问hexo</li>
+</ul>
+<p>新增内容</p>
+<ul>
+<li>将写好的 Markdown 放到 <code>source\_posts</code> 目录</li>
+<li>将相应的图片放到 <code>source\images</code>目录(如果没有需要自己创建)</li>
+<li>启动 Hexo 服务（如果之前没有关闭，请忽略此步骤）</li>
+<li>通过浏览器访问博客主页，可以发现更改已生效</li>
+</ul>
+<p>部署到github的pages</p>
+<ul>
+<li>在github创建一个以<code>用户名称.github.io</code>命名的仓库</li>
+<li>修改<code>_config.yml</code>的内容</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:Autunomy/Autunomy.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>安装deploy-git<code>npm install hexo-deployer-git --save</code></li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">clean</span> <span class="comment">#清除之前生成的东西</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">generate</span>  <span class="comment">#生成静态文章，缩写hexo g</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">deploy</span>  <span class="comment">#部署文章，缩写hexo d</span></span><br></pre></td></tr></table></figure>
+
+<p>安装主题</p>
+<ul>
+<li><a href="https://theme-next.iissnan.com/getting-started.html">https://theme-next.iissnan.com/getting-started.html</a></li>
+<li><a href="https://blog.csdn.net/as480133937/article/details/100138838">https://blog.csdn.net/as480133937/article/details/100138838</a></li>
+<li><a href="https://theme-next.iissnan.com/theme-settings.html">https://theme-next.iissnan.com/theme-settings.html</a></li>
+</ul>
+]]></content>
+  </entry>
 </search>

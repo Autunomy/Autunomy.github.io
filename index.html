@@ -183,6 +183,102 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn,en,default">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/23/%E4%BD%BF%E7%94%A8hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="hty">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/01/23/%E4%BD%BF%E7%94%A8hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">使用hexo+github搭建个人博客</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-01-23 19:20:30 / Modified: 19:21:23" itemprop="dateCreated datePublished" datetime="2025-01-23T19:20:30+08:00">2025-01-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<h1 id="MacOS系统"><a href="#MacOS系统" class="headerlink" title="MacOS系统"></a>MacOS系统</h1><p>安装hexo</p>
+<ul>
+<li><h1 id="安装homebrew"><a href="#安装homebrew" class="headerlink" title="安装homebrew"></a>安装homebrew</h1></li>
+<li>安装node<code>brew install node</code> </li>
+<li>npm install npm -g # 更新npm</li>
+<li>npm install -g hexo-cli # 本地安装hexo</li>
+<li>hexo init blog # 初始化hexo，blog是在本地创建的目录名称</li>
+<li>cd blog # 进入目录</li>
+<li>npm install  # 安装依赖</li>
+<li>hexo server # 启动hexo服务</li>
+<li><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 访问网址即可在本地访问hexo</li>
+</ul>
+<p>新增内容</p>
+<ul>
+<li>将写好的 Markdown 放到 <code>source\_posts</code> 目录</li>
+<li>将相应的图片放到 <code>source\images</code>目录(如果没有需要自己创建)</li>
+<li>启动 Hexo 服务（如果之前没有关闭，请忽略此步骤）</li>
+<li>通过浏览器访问博客主页，可以发现更改已生效</li>
+</ul>
+<p>部署到github的pages</p>
+<ul>
+<li>在github创建一个以<code>用户名称.github.io</code>命名的仓库</li>
+<li>修改<code>_config.yml</code>的内容</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:Autunomy/Autunomy.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>安装deploy-git<code>npm install hexo-deployer-git --save</code></li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">clean</span> <span class="comment">#清除之前生成的东西</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">generate</span>  <span class="comment">#生成静态文章，缩写hexo g</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">deploy</span>  <span class="comment">#部署文章，缩写hexo d</span></span><br></pre></td></tr></table></figure>
+
+<p>安装主题</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/getting-started.html">https://theme-next.iissnan.com/getting-started.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/as480133937/article/details/100138838">https://blog.csdn.net/as480133937/article/details/100138838</a></li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/theme-settings.html">https://theme-next.iissnan.com/theme-settings.html</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn,en,default">
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/23/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -317,7 +413,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
